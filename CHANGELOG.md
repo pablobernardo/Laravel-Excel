@@ -1,7 +1,12 @@
 # Changelog
+
 All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
+
+## [3.1.24.1] - 2020-11-04
+
+- Tests removed for compatibility with Orchestra < 6.0
 
 ## [3.1.24] - 2020-10-28
 
@@ -18,6 +23,7 @@ All notable changes to this project will be documented in this file.
 ## [3.1.23] - 2020-09-29
 
 ### Added
+
 - Added `ignore_empty` setting to `config/excel.php`
 - Added `strict_null_comparison` setting to `config/excel.php`
 
@@ -29,6 +35,7 @@ All notable changes to this project will be documented in this file.
 ## [3.1.21] - 2020-08-06
 
 ### Added
+
 - Added WithProperties concern
 - Added default spreadsheet properties config
 - Added WithColumnWidths concern
@@ -36,15 +43,18 @@ All notable changes to this project will be documented in this file.
 - Config setting to configure cell caching
 
 ### Changed
+
 - Sheet titles longer than 31 chars get trimmed.
 - Sheet titles with unsupported chars get cleaned.
 
 ### Fixed
+
 - Fixed issue with using ShouldAutosize in combination with FromView column widths.
 
 ## [3.1.20] - 2020-07-22
 
 ### Added
+
 - Re-sycing remote temporary file
 - Remember row number
 - Remember chunk offset
@@ -53,6 +63,7 @@ All notable changes to this project will be documented in this file.
 - Publishing the stubs
 
 ### Changed
+
 - Interacting with queued jobs
 - Retry until and middleware on queued imports
 - Using WithValidation with FromCollection & FromArray
@@ -60,6 +71,7 @@ All notable changes to this project will be documented in this file.
 - Bump of minimum version PhpSpreadsheet
 
 ### Fixed
+
 - Fixed test helper docblocks on the Excel facade.
 - Fix for importing with a start row beyond the highest row.
 - Fixed `BeforeSheet` and `AfterSheet` events receiving exportable instance instead of importable when calling on an Import.
@@ -69,7 +81,7 @@ All notable changes to this project will be documented in this file.
 - Raw() method now also available on Exportable.
 - Fix for breaking changes in PhpSpreadsheet with empty enclosures.
 
-[Unreleased]: https://github.com/Maatwebsite/Laravel-Excel/compare/3.1.24...HEAD
+[unreleased]: https://github.com/Maatwebsite/Laravel-Excel/compare/3.1.24...HEAD
 [3.1.24]: https://github.com/Maatwebsite/Laravel-Excel/compare/3.1.23...3.1.24
 [3.1.23]: https://github.com/Maatwebsite/Laravel-Excel/compare/3.1.22...3.1.23
 [3.1.22]: https://github.com/Maatwebsite/Laravel-Excel/compare/3.1.21...3.1.22
